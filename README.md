@@ -1,0 +1,1 @@
+Para usar el intérprete, nos situamos en la carpeta principal del proyecto y usamos 'stack build', seguido de 'stack exec TPFinal-exe'. Alternativamente se pueden unir estos 2 pasos usando el comando 'stack run'.
