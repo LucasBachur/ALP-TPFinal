@@ -142,7 +142,7 @@ helpTxt cs =
     ++ "c es el primer caracter del nombre completo.\n\n"
     ++ "show <expr>             Mostrar un mazo carta por carta\n"
     ++ "isDeck <expr>           Determinar si un mazo es valido\n"
-    ++ "export <expr>           Mostrar el codigo de un mazo para exportar\n"
+    ++ "export <expr> <hero>    Mostrar el codigo de un mazo para exportar\n"
     ++ "cardData <id>/\"<name>\"  Mostrar informacion sobre una carta\n"
     ++ "<var> = <expr>          Definir una variable\n"
     ++ unlines
@@ -168,7 +168,7 @@ compileFile state@(S inter cd v) f = do
   lift $ putStrLn ("Abriendo " ++ f ++ "...")
   let f' = reverse (dropWhile isSpace (reverse f))
   x <- lift $ Control.Exception.catch
-    (readFile ("Files/" ++ f'))
+    (readFile ("files/" ++ f'))
     (\e -> do
       let err = show (e :: IOException)
       hPutStr stderr

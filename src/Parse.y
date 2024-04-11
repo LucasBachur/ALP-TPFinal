@@ -88,6 +88,7 @@ CardDef    :: { CardDef }
 FilterList :: { [Filter] }
            :  Filter ',' FilterList                     { $1 : $3 }
            |  Filter                                    { [$1] }
+           |                                            { [] }
 
 Filter     :: { Filter }
            :  Field                                     { Field $1 }
