@@ -1,0 +1,15 @@
+a = [2539,2275]
+b = [2x614,68322]
+c = [2539,2275,614,68322,90856,98136] 
+d = filter([Minion] c)
+e = filter([Attack:3] c)
+f = filter([Attack:3,Health:2] c)
+g = b+b
+h = inCommon(a c)
+i = [2]
+l = [2x"Cheesemonger", "Reno Jackson"]
+m = c-a
+n = a-c
+d1 = import AAEBAfHhBAblsAS/zgTt/wX/lwaAnwb2owYM8OME9eMEmMQFyoMG0IMG9YwG94wGhY4GyZEG85EGiJIGkqAGAA==
+d2 = import AAEBAfHhBAblsAS/zgTt/wX/lwaAnwb2owYM8OME9eMEmMQFyoMG0IMG9YwG94wGhY4GyZEG85EGiJIGkqAGAA== + l
+vacio = []
